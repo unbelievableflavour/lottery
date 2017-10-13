@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.github.bartzaalberg.lottery.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Lottery</name>
+  <summary>Who will be the winner?</summary>
+  <description>
+    <p>A tool to determine who will be the winner.</p>
+    <p>Features:</p>
+     <ul>
+       <li>Add, and remove names</li>
+       <li>Randomly generate a winner!</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/bartzaalberg/lottery/master/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/bartzaalberg/lottery/master/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
+  <developer_name>Bart Zaalberg</developer_name>
+  <custom>
+    <value key="x-appcenter-color-primary">rgb(224,247,255)</value>
+    <value key="x-appcenter-color-primary-text">#000</value>
+  </custom>
+  <url type="homepage">https://github.com/bartzaalberg/lottery</url>
+  <url type="bugtracker">https://github.com/bartzaalberg/lottery/issues</url>
+  <url type="help">https://github.com/bartzaalberg/lottery/issues</url>
+</component>

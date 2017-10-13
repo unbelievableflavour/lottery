@@ -1,14 +1,14 @@
-# Repositories
-Manager for your apt repositories
+# Lottery
+Determine who will be the winner
  
 <p align="center"> 
     <img  
-    src="https://raw.githubusercontent.com/bartzaalberg/repositories-manager/master/screenshot.png" /> 
+    src="https://raw.githubusercontent.com/bartzaalberg/lottery/master/screenshot.png" /> 
 </p> 
 
-### Repositories manager for elementary OS
+### lottery for elementary OS
 
-A Vala application to manage your repositories in an interface
+An application who will randomly choose in a list of filled in people
 
 ## Installation
 
@@ -34,7 +34,3 @@ make
 
 ### Installing
 `sudo make install`
-
-### Running
-To run, run the following command. Or just search for repositories in your launcher and open it from there
-`./com.github.bartzaalberg.repositories-polkit`
