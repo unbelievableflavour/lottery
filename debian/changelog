@@ -1,3 +1,10 @@
+com.github.bartzaalberg.lottery (1.0.0) UNSTABLE; urgency=low
+
+  * Added icons for the buttons
+  * Added a cheatsheet
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Mon, 16 Oct 2017 12:26:00 +0200
+
 com.github.bartzaalberg.lottery (0.0.2) UNSTABLE; urgency=low
 
   * Added shortcut for adding a person(ctrl + a)
