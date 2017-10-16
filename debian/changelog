@@ -1,3 +1,9 @@
+com.github.bartzaalberg.lottery (1.1.0) UNSTABLE; urgency=low
+
+  * Updated the win dialog to a screen instead of a dialog!
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Mon, 16 Oct 2017 16:12:00 +0200
+
 com.github.bartzaalberg.lottery (1.0.0) UNSTABLE; urgency=low
 
   * Added icons for the buttons

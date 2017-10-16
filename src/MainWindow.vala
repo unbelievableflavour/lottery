@@ -25,7 +25,7 @@ public class MainWindow : Gtk.Window{
                     break;
                 case Gdk.Key.w:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
-                        new Winner(); 
+                        stackManager.showWinnerView();
                     } 
                     break;
                 case Gdk.Key.h:

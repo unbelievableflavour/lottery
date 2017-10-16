@@ -4,6 +4,7 @@ namespace RepositoriesManager {
 public class HeaderBar : Gtk.HeaderBar {
 
     ListManager listManager = ListManager.get_instance();
+    StackManager stackManager = StackManager.get_instance();
     
     public HeaderBar(){
 
@@ -29,7 +30,7 @@ public class HeaderBar : Gtk.HeaderBar {
         lottery_button.set_image(image);
         lottery_button.set_tooltip_text("Randomly generate a winner");
         lottery_button.clicked.connect (() => {
-            new Winner();
+            stackManager.showWinnerView();
         });
 
         var cheatsheet_button = new Gtk.Button.from_icon_name ("help-contents", Gtk.IconSize.LARGE_TOOLBAR);
