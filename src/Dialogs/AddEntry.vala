@@ -72,6 +72,17 @@ public class AddEntry : Gtk.Dialog {
 
         get_content_area ().add (button_box);
         this.show_all ();
+
+        key_press_event.connect ((e) => { 
+            switch (e.keyval) { 
+                case Gdk.Key.Return:
+                  createNewRepository(); 
+                  break; 
+            }
+ 
+            return false; 
+        });
+
     }
 
     public void createNewRepository(){

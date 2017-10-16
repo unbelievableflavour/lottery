@@ -1,3 +1,10 @@
+com.github.bartzaalberg.lottery (0.0.2) UNSTABLE; urgency=low
+
+  * Added shortcut for adding a person(ctrl + a)
+  * Added shortcut for choosing a random winner(ctrl + w)
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Mon, 16 Oct 2017 10:53:00 +0200
+
 com.github.bartzaalberg.lottery (0.0.1) UNSTABLE; urgency=low
 
   * First release

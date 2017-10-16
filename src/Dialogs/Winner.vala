@@ -1,17 +1,24 @@
 namespace RepositoriesManager {
 public class Winner : Gtk.Dialog {
 
-    public Winner(string title, string description){
+    EntryManager entryManager = EntryManager.get_instance();
+
+    public Winner(){
+
+        if(entryManager.getEntries().length == 0){
+            new Alert("Cannot choose a winner yet", "No names have been added yet");
+            return;            
+        }
         var image = new Gtk.Image.from_icon_name ("avatar-default", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var primary_label = new Gtk.Label (title);
+        var primary_label = new Gtk.Label ("And the winner is...");
         primary_label.selectable = true;
         primary_label.max_width_chars = 50;
         primary_label.wrap = true;
         primary_label.xalign = 0;
 
-        var secondary_label = new Gtk.Label (description);
+        var secondary_label = new Gtk.Label (entryManager.getWinner() + "!");
         secondary_label.use_markup = true;
         secondary_label.selectable = true;
         secondary_label.max_width_chars = 50;

@@ -5,7 +5,6 @@ public class HeaderBar : Gtk.HeaderBar {
 
     ListManager listManager = ListManager.get_instance();
     StackManager stackManager = StackManager.get_instance();
-    EntryManager entryManager = EntryManager.get_instance();
     
     public HeaderBar(){
 
@@ -27,11 +26,7 @@ public class HeaderBar : Gtk.HeaderBar {
         var lottery_button = new Gtk.Button.with_label ("Lottery");
         lottery_button.margin_end = 12;
         lottery_button.clicked.connect (() => {
-            if(entryManager.getEntries().length == 0){
-                new Alert("Cannot choose a winner yet", "No names have been added yet");
-                return;            
-            }
-            new Winner("And the winner is...", entryManager.getWinner() + "!");            
+            new Winner();            
         });
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);

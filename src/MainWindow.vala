@@ -15,6 +15,23 @@ public class MainWindow : Gtk.Window{
         listManager.getList().getRepositories("");
 
         stackManager.getStack().visible_child_name = "welcome-view";
+
+        key_press_event.connect ((e) => { 
+            switch (e.keyval) { 
+                case Gdk.Key.a:
+                    if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
+                        new AddEntry(); 
+                    } 
+                    break;
+                case Gdk.Key.w:
+                    if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
+                        new Winner(); 
+                    } 
+                    break;
+            }
+ 
+            return false; 
+        });
     }
 }
 }
