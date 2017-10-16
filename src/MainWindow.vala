@@ -28,8 +28,13 @@ public class MainWindow : Gtk.Window{
                         new Winner(); 
                     } 
                     break;
+                case Gdk.Key.h:
+                    if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
+                        new Cheatsheet(); 
+                    }
+                    break;
             }
- 
+
             return false; 
         });
     }

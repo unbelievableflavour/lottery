@@ -39,10 +39,7 @@ public class EntryManager : Gtk.ListBox{
     }
 
     public string getWinner(){
-
-        var arrayLength = entries.length;
         int randomIndex = GLib.Random.int_range (0, entries.length);
-
         return entries[randomIndex];
     }
 }

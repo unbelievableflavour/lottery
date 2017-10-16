@@ -4,7 +4,6 @@ namespace RepositoriesManager {
 public class HeaderBar : Gtk.HeaderBar {
 
     ListManager listManager = ListManager.get_instance();
-    StackManager stackManager = StackManager.get_instance();
     
     public HeaderBar(){
 
@@ -17,26 +16,34 @@ public class HeaderBar : Gtk.HeaderBar {
             listManager.getList().getRepositories(searchEntry.text); 
         });
 
-        var create_button = new Gtk.Button.with_label ("Add");
-        create_button.margin_end = 12;
+        var create_button = new Gtk.Button.from_icon_name ("contact-new", Gtk.IconSize.LARGE_TOOLBAR);
+        create_button.set_tooltip_text("Add a new name");
         create_button.clicked.connect (() => {
             new AddEntry();
         });
+        
+        var pixbuf = new Gdk.Pixbuf.from_file_at_scale("/usr/share/pixmaps/lottery.crown.svg",24,24,true);
+        var image = new Gtk.Image.from_pixbuf(pixbuf);
 
-        var lottery_button = new Gtk.Button.with_label ("Lottery");
-        lottery_button.margin_end = 12;
+        var lottery_button = new Gtk.Button();
+        lottery_button.set_image(image);
+        lottery_button.set_tooltip_text("Randomly generate a winner");
         lottery_button.clicked.connect (() => {
-            new Winner();            
+            new Winner();
         });
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.set_layout (Gtk.ButtonBoxStyle.START);
-        button_box.pack_start (create_button);
-      
+        var cheatsheet_button = new Gtk.Button.from_icon_name ("help-contents", Gtk.IconSize.LARGE_TOOLBAR);
+        cheatsheet_button.set_tooltip_text("A list of available shortcuts");
+        cheatsheet_button.clicked.connect (() => {
+            new Cheatsheet ();
+        });
+
         this.show_close_button = true;
 
-        this.pack_start (button_box);
-        this.pack_end (searchEntry);
+        this.pack_start (create_button);
+        this.pack_start (searchEntry);
+
+        this.pack_end (cheatsheet_button);
         this.pack_end (lottery_button);
     }
 }

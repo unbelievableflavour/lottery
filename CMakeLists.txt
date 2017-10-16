@@ -55,6 +55,7 @@
         src/Dialogs/AddEntry.vala
         src/Dialogs/DeleteConfirm.vala
         src/Dialogs/Winner.vala
+        src/Dialogs/Cheatsheet.vala
         src/Views/ListView.vala
         src/Views/NotFoundView.vala
         src/Views/WelcomeView.vala
@@ -75,3 +76,6 @@
 
     #add the data directory and activated the cmakelists in that folder
     add_subdirectory (data)
+
+    #add custom headerbar images to pixmap folder
+    install (FILES data/icons/lottery.crown.svg DESTINATION /usr/share/pixmaps/)

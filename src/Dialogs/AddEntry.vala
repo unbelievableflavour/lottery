@@ -89,7 +89,7 @@ public class AddEntry : Gtk.Dialog {
         var entries = entryManager.getEntries();
 
         if(isNotValid(aptEntry.text)){
-            new Alert("Field is invalid", "The APT line includes the type, location and components of a repository, for example  'deb http://archive.ubuntu.com/ubuntu xenial main'.");
+            new Alert("Please enter a name", "You didn't enter a name. Please do so to continue!");
             return;
         }
 
