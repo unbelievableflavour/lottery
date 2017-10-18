@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class DeleteConfirm : Gtk.Dialog {
 
     ListManager listManager = ListManager.get_instance();

@@ -1,6 +1,6 @@
 using Granite.Widgets;
 
-namespace RepositoriesManager {
+namespace Application {
 public class HeaderBar : Gtk.HeaderBar {
 
     ListManager listManager = ListManager.get_instance();

@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class Alert : Gtk.Dialog {
 
     public Alert(string title, string description){

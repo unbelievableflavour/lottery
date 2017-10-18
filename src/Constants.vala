@@ -1,4 +1,4 @@
-namespace RepositoriesManager.Constants {
+namespace Application.Constants {
     public const string APP_NAME = "Lottery";
     public const string EXEC_NAME = "Lottery";
     public const Gdk.RGBA BRAND_COLOR = { 0, 0.6, 1.1, 1 };

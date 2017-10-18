@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class StackManager : Object {
     
     static StackManager? instance;

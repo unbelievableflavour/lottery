@@ -1,6 +1,6 @@
 using Granite.Widgets;
 
-namespace RepositoriesManager {
+namespace Application {
 public class MainWindow : Gtk.Window{
 
     private ListManager listManager = ListManager.get_instance();

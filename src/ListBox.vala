@@ -1,6 +1,6 @@
 using Granite.Widgets;
 
-namespace RepositoriesManager {
+namespace Application {
 public class ListBox : Gtk.ListBox{
 
     private EntryManager entryManager = EntryManager.get_instance();

@@ -1,6 +1,6 @@
 using Granite.Widgets;
 
-namespace RepositoriesManager {
+namespace Application {
 public class WelcomeView : Gtk.ScrolledWindow {
 
     public WelcomeView(){ 

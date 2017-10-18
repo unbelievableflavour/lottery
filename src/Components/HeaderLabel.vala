@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class HeaderLabel : Gtk.Label {
     
     public HeaderLabel (string text) {

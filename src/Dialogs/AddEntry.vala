@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class AddEntry : Gtk.Dialog {
   
     private EntryManager entryManager = EntryManager.get_instance();

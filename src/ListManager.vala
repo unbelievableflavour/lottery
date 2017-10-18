@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class ListManager : Object {
     
     static ListManager? instance;

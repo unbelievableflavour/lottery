@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class Cheatsheet : Gtk.Dialog {
   
     public Cheatsheet(){

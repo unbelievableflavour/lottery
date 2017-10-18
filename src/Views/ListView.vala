@@ -1,4 +1,4 @@
-namespace RepositoriesManager {
+namespace Application {
 public class ListView : Gtk.ScrolledWindow {
        
    ListManager listManager = ListManager.get_instance();
