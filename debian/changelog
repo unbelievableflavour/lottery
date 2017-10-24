@@ -1,3 +1,11 @@
+com.github.bartzaalberg.lottery (1.2.0) UNSTABLE; urgency=low
+
+  * Added the new awesome icon created by kosijer
+  * Changed the theme colour to red
+  * Added an about action which redirects to the appcenter
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Tue, 24 Oct 2017 21:29:00 +0200
+
 com.github.bartzaalberg.lottery (1.1.1) UNSTABLE; urgency=low
 
   * Updated the win dialog with a seperate headerbar
