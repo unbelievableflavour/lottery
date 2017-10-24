@@ -46,7 +46,7 @@ public class HeaderBar : Gtk.HeaderBar {
             
         });
 
-        var cheatsheet_button = new Gtk.Button.from_icon_name ("help-contents", Gtk.IconSize.LARGE_TOOLBAR);
+        var cheatsheet_button = new Gtk.Button.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
         cheatsheet_button.set_tooltip_text("A list of available shortcuts");
         cheatsheet_button.clicked.connect (() => {
             new Cheatsheet ();
