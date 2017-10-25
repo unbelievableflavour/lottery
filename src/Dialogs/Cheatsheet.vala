@@ -8,20 +8,17 @@ public class Cheatsheet : Gtk.Dialog {
 
         var general_header = new HeaderLabel ("Cheatsheet");
         
-        var addLabel = new Gtk.Label ("Add a new name");
-        addLabel.halign = Gtk.Align.START;
-        var addEntry = new Gtk.Label (null);
-        addEntry.set_markup("<b>ctrl + a</b>");
+        var addLabel = generateLabel ("Add a new name");
+        var addEntry = generateEntry ("ctrl + a");
 
-        var chooseWinnerLabel = new Gtk.Label ("Randomly choose a winner");
-        chooseWinnerLabel.halign = Gtk.Align.START;        
-        var chooseWinnerEntry = new Gtk.Label (null);
-        chooseWinnerEntry.set_markup("<b>ctrl + w</b>");
-        
-        var cheatsheetLabel = new Gtk.Label ("Open the cheatsheet");
-        cheatsheetLabel.halign = Gtk.Align.START;        
-        var cheatsheetEntry = new Gtk.Label (null);
-        cheatsheetEntry.set_markup("<b>ctrl + h</b>");        
+        var chooseWinnerLabel = generateLabel ("Randomly choose a winner");
+        var chooseWinnerEntry = generateEntry ("ctrl + w");
+
+        var searchLabel = generateLabel ("Search");
+        var searchEntry = generateEntry ("ctrl + f");
+
+        var cheatsheetLabel = generateLabel ("Open the cheatsheet");
+        var cheatsheetEntry = generateEntry ("ctrl + h");
         
         var close_button = new Gtk.Button.with_label ("Close");
         close_button.margin_right = 6;
@@ -45,8 +42,10 @@ public class Cheatsheet : Gtk.Dialog {
         general_grid.attach (addEntry, 1, 1, 1, 1);
         general_grid.attach (chooseWinnerLabel, 0, 2, 1, 1);
         general_grid.attach (chooseWinnerEntry, 1, 2, 1, 1);
-        general_grid.attach (cheatsheetLabel, 0, 3, 1, 1);
-        general_grid.attach (cheatsheetEntry, 1, 3, 1, 1);
+        general_grid.attach (searchLabel, 0, 3, 1, 1);
+        general_grid.attach (searchEntry, 1, 3, 1, 1);
+        general_grid.attach (cheatsheetLabel, 0, 4, 1, 1);
+        general_grid.attach (cheatsheetEntry, 1, 4, 1, 1);
     
         var main_grid = new Gtk.Grid ();
         main_grid.attach (general_grid, 0, 0, 1, 1);
@@ -54,6 +53,20 @@ public class Cheatsheet : Gtk.Dialog {
         
         ((Gtk.Container) get_content_area ()).add (main_grid);
         this.show_all ();
+    }
+
+    public Gtk.Label generateLabel (string labelText){
+        var label = new Gtk.Label (labelText);
+        label.halign = Gtk.Align.START;
+
+        return label;
+    }
+    
+    public Gtk.Label generateEntry (string entryText){
+        var entry = new Gtk.Label (null);
+        entry.set_markup("<b>" + entryText + "</b>");
+
+        return entry;
     }
 }
 }

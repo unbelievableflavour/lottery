@@ -60,7 +60,7 @@ public class AddEntry : Gtk.Dialog {
         var create_button = new Gtk.Button.with_label ("Create");
         create_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);        
         create_button.clicked.connect (() => {
-            createNewRepository();
+            createNewPerson();
         });
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
@@ -76,7 +76,7 @@ public class AddEntry : Gtk.Dialog {
         key_press_event.connect ((e) => { 
             switch (e.keyval) { 
                 case Gdk.Key.Return:
-                  createNewRepository(); 
+                  createNewPerson(); 
                   break; 
             }
  
@@ -85,7 +85,7 @@ public class AddEntry : Gtk.Dialog {
 
     }
 
-    public void createNewRepository(){
+    public void createNewPerson(){
         var entries = entryManager.getEntries();
 
         if(isNotValid(aptEntry.text)){
@@ -94,7 +94,7 @@ public class AddEntry : Gtk.Dialog {
         }
 
         if(alreadyExists(aptEntry.text, entries)){
-            new Alert("This repository already exists", "Please choose a different name");
+            new Alert("This person is already in the list", "Please choose a different name");
             return;
         }
         

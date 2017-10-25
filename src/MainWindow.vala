@@ -23,7 +23,7 @@ public class MainWindow : Gtk.Window{
                 case Gdk.Key.a:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
                         new AddEntry(); 
-                    } 
+                    }
                     break;
                 case Gdk.Key.w:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
@@ -37,6 +37,11 @@ public class MainWindow : Gtk.Window{
                         new Cheatsheet(); 
                     }
                     break;
+                case Gdk.Key.f:    
+                  if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
+                    headerBar.searchEntry.grab_focus();
+                  }
+                  break;
             }
 
             return false; 
