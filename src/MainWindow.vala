@@ -9,7 +9,7 @@ public class MainWindow : Gtk.Window{
     private HeaderBar headerBar = new HeaderBar();
 
     construct {
-        set_default_size(200, 810);
+        set_default_size(Constants.APPLICATION_WIDTH, Constants.APPLICATION_HEIGHT);
         set_titlebar (headerBar);
 
         stackManager.loadViews(this);
@@ -18,6 +18,10 @@ public class MainWindow : Gtk.Window{
 
         stackManager.getStack().visible_child_name = "welcome-view";
 
+        addShortcuts();
+    }
+
+    private void addShortcuts(){
         key_press_event.connect ((e) => { 
             switch (e.keyval) { 
                 case Gdk.Key.a:
