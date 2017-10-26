@@ -5,8 +5,8 @@ public class DeleteConfirm : Gtk.Dialog {
 
     public DeleteConfirm(string repository){
         if(repository == ""){
-            new Alert("No repository was selected", "Please select a repository and try again.");  
-            return;      
+            new Alert("No person was selected", "Please select a person and try again.");  
+            return;
         }
 
         var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
@@ -18,7 +18,7 @@ public class DeleteConfirm : Gtk.Dialog {
         primary_label.wrap = true;
         primary_label.xalign = 0;
 
-        var secondary_label = new Gtk.Label ("You are about to delete this repository. Are you sure?");
+        var secondary_label = new Gtk.Label ("You are about to remove this person from the list. Are you sure?");
         secondary_label.use_markup = true;
         secondary_label.selectable = true;
         secondary_label.max_width_chars = 50;

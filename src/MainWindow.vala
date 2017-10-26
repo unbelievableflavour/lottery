@@ -9,7 +9,7 @@ public class MainWindow : Gtk.Window{
     private HeaderBar headerBar = new HeaderBar();
 
     construct {
-        set_default_size(200, 810);
+        set_default_size(Constants.APPLICATION_WIDTH, Constants.APPLICATION_HEIGHT);
         set_titlebar (headerBar);
 
         stackManager.loadViews(this);
@@ -18,12 +18,16 @@ public class MainWindow : Gtk.Window{
 
         stackManager.getStack().visible_child_name = "welcome-view";
 
+        addShortcuts();
+    }
+
+    private void addShortcuts(){
         key_press_event.connect ((e) => { 
             switch (e.keyval) { 
                 case Gdk.Key.a:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
                         new AddEntry(); 
-                    } 
+                    }
                     break;
                 case Gdk.Key.w:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
@@ -37,6 +41,11 @@ public class MainWindow : Gtk.Window{
                         new Cheatsheet(); 
                     }
                     break;
+                case Gdk.Key.f:    
+                  if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {  
+                    headerBar.searchEntry.grab_focus();
+                  }
+                  break;
             }
 
             return false; 
