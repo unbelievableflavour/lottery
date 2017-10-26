@@ -9,3 +9,8 @@ Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=lottery
 Keywords=guess;lottery;
+Actions=AboutDialog;
+
+[Desktop Action AboutDialog]
+Exec=xdg-open appstream://com.github.bartzaalberg.lottery.desktop
+Name=About Lottery

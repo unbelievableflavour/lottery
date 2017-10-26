@@ -6,7 +6,7 @@ public class HeaderBar : Gtk.HeaderBar {
     ListManager listManager = ListManager.get_instance();
     StackManager stackManager = StackManager.get_instance();
    
-    Gtk.SearchEntry searchEntry = new Gtk.SearchEntry ();
+    public Gtk.SearchEntry searchEntry = new Gtk.SearchEntry ();
     Gtk.Button create_button = new Gtk.Button.from_icon_name ("contact-new", Gtk.IconSize.LARGE_TOOLBAR);
     Gtk.Button return_button = new Gtk.Button ();
     Gtk.Button lottery_button = new Gtk.Button();
@@ -46,7 +46,7 @@ public class HeaderBar : Gtk.HeaderBar {
             
         });
 
-        var cheatsheet_button = new Gtk.Button.from_icon_name ("help-contents", Gtk.IconSize.LARGE_TOOLBAR);
+        var cheatsheet_button = new Gtk.Button.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
         cheatsheet_button.set_tooltip_text("A list of available shortcuts");
         cheatsheet_button.clicked.connect (() => {
             new Cheatsheet ();

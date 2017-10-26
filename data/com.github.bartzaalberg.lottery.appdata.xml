@@ -27,7 +27,7 @@
   </screenshots>
   <developer_name>Bart Zaalberg</developer_name>
   <custom>
-    <value key="x-appcenter-color-primary">rgb(224,247,255)</value>
+    <value key="x-appcenter-color-primary">rgb(255, 174, 191)</value>
     <value key="x-appcenter-color-primary-text">#000</value>
   </custom>
   <url type="homepage">https://github.com/bartzaalberg/lottery</url>
