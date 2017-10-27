@@ -1,3 +1,10 @@
+com.github.bartzaalberg.lottery (1.2.1) UNSTABLE; urgency=low
+
+  * Refactored alot of code
+  * Added search shortcut with ctrl + f
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Fri, 27 Oct 2017 16:42:00 +0200
+
 com.github.bartzaalberg.lottery (1.2.0) UNSTABLE; urgency=low
 
   * Added the new awesome icon created by kosijer
