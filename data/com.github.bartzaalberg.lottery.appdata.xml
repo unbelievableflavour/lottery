@@ -14,6 +14,77 @@
        <li>Use cool shortcuts to make it easier!</li>
     </ul>
   </description>
+ <releases>
+   <release version="1.2.2" date="2017-11-01">
+      <description>
+        <p>Fixed the icon shadows!</p>
+        <ul>
+          <li>Fixed icon shadows</li>
+        </ul>
+      </description>
+   </release>
+   <release version="1.2.1" date="2017-10-27">
+      <description>
+        <p>A nice shortcut for searching!</p>
+        <ul>
+          <li>Refactored alot of code</li>
+          <li>Added search shortcut with ctrl + f</li>
+        </ul>
+      </description>
+   </release>
+   <release version="1.2.0" date="2017-10-24">
+      <description>
+        <p>Icon theme and colour</p>
+        <ul>
+          <li>Added the new awesome icon created by kosijer</li>
+          <li>Changed the theme colour to red</li>
+          <li>Added an about action which redirects to the appcenter</li>
+        </ul>
+      </description>
+   </release>
+   <release version="1.1.1" date="2017-10-18">
+      <description>
+        <p>1.1.1</p>
+        <ul>
+          <li>Updated the win dialog with a seperate headerbar</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.0" date="2017-10-16">
+      <description>
+        <p>1.1.0</p>
+        <ul>
+          <li>Updated the win dialog to a screen instead of a dialog!</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.0" date="2017-10-16">
+      <description>
+        <p>1.0.0</p>
+        <ul>
+          <li>Added icons for the buttons</li>
+          <li>Added a cheatsheet</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.0.2" date="2017-10-16">
+      <description>
+        <p>0.0.2</p>
+        <ul>
+          <li>Added shortcut for adding a person(ctrl + a)</li>
+          <li>Added shortcut for choosing a random winner(ctrl + w)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.0.1" date="2017-10-14">
+      <description>
+        <p>0.0.1</p>
+        <ul>
+          <li>First release</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/bartzaalberg/lottery/master/screenshot.png</image>
