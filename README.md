@@ -19,6 +19,10 @@ An application who will randomly choose in a list of filled in people
 
 ## Installation
 
+As first you need elementary SDK
+
+ `sudo apt install elementary-sdk`
+
 ### Dependencies
 
 These dependencies must be present before building
