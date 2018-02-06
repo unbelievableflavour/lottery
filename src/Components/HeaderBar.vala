@@ -56,13 +56,12 @@ public class HeaderBar : Gtk.HeaderBar {
         });
     }
 
-    private void generateChooseWinnerButton(){        
-        var pixbuf = new Gdk.Pixbuf.from_file_at_scale("/usr/share/pixmaps/lottery.crown.svg",24,24,true);
-        var image = new Gtk.Image.from_pixbuf(pixbuf);        
-        lottery_button.set_image(image);
+    private void generateChooseWinnerButton(){
+        var icon = new Gtk.Image.from_icon_name ("lottery-crown", Gtk.IconSize.LARGE_TOOLBAR);
+        lottery_button.set_image(icon);
         lottery_button.set_tooltip_text("Randomly generate a winner");
         lottery_button.clicked.connect (() => {
-            stackManager.showWinnerView();            
+            stackManager.showWinnerView();    
         });
 
     }
@@ -89,6 +88,7 @@ public class HeaderBar : Gtk.HeaderBar {
         create_button.visible = answer;
         create_button.visible = answer;
         lottery_button.visible = answer;
+        cheatsheet_button.visible = answer;
     }
 
     public void showReturnButton(bool answer){

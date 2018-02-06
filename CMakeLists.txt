@@ -68,14 +68,14 @@
         granite
     )
 
-    # tell cmake what to call the executable we just made
-    add_executable(${EXEC_NAME} ${VALA_C})
+    include (GResource)
+    glib_compile_resources (GLIB_RESOURCES_ICONS SOURCE /data/icons/icons.gresource.xml)
+
+    # tell cmake what to call the executable we just made and install
+    add_executable(${EXEC_NAME} ${VALA_C} ${GLIB_RESOURCES_ICONS})
 
     # install the binaries we just made
     install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
     #add the data directory and activated the cmakelists in that folder
     add_subdirectory (data)
-
-    #add custom headerbar images to pixmap folder
-    install (FILES data/icons/lottery.crown.svg DESTINATION /usr/share/pixmaps/)

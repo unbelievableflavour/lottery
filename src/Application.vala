@@ -16,6 +16,9 @@ public class App:Granite.Application{
     }
 
     public override void activate() {
+        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+        default_theme.add_resource_path ("/com/github/bartzaalberg/lottery");
+
         var window = new MainWindow ();
         window.destroy.connect (Gtk.main_quit);
         window.show_all();

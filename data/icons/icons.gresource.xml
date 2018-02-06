@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/bartzaalberg/lottery">
+    <file alias="lottery-crown.svg" compressed="true" preprocess="xml-stripblanks">lottery-crown.svg</file>
+  </gresource>
+</gresources>
