@@ -8,6 +8,7 @@ public class StackManager : Object {
     private const string LIST_VIEW_ID = "list-view";
     private const string NOT_FOUND_VIEW_ID = "not-found-view";
     private const string WELCOME_VIEW_ID = "welcome-view";
+    private const string WINNER_VIEW_ID = "winner-view";
 
    WinnerView winnerView;
 
@@ -35,7 +36,31 @@ public class StackManager : Object {
         stack.add_named (new ListView(), LIST_VIEW_ID);
         stack.add_named (new NotFoundView(), NOT_FOUND_VIEW_ID);
         stack.add_named (new WelcomeView(), WELCOME_VIEW_ID);
-        stack.add_named (winnerView, "winner-view");
+        stack.add_named (winnerView, WINNER_VIEW_ID);
+
+        stack.notify["visible-child"].connect (() => {
+            var headerBar = HeaderBar.get_instance();
+
+            if(stack.get_visible_child_name() == WELCOME_VIEW_ID){
+                headerBar.showReturnButton(false);
+                headerBar.showButtons(true);
+            }
+
+            if(stack.get_visible_child_name() == NOT_FOUND_VIEW_ID){
+                headerBar.showReturnButton(false);
+                headerBar.showButtons(true);
+            }
+
+            if(stack.get_visible_child_name() == LIST_VIEW_ID){
+                headerBar.showReturnButton(false);
+                headerBar.showButtons(true);
+            }
+            if(stack.get_visible_child_name() == WINNER_VIEW_ID){
+                headerBar.showReturnButton(true);
+                headerBar.showButtons(false);
+            }
+        });
+
 
         window.add(stack);
         window.show_all();

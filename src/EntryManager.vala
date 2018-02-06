@@ -6,11 +6,9 @@ public class EntryManager : Gtk.ListBox{
     static EntryManager? instance;
     string[] entries = new string[0];
 
-    // Private constructor
     EntryManager() {
     }
  
-    // Public constructor
     public static EntryManager get_instance() {
         if (instance == null) {
             instance = new EntryManager();
