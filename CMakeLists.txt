@@ -15,8 +15,8 @@
     set (PKGDATADIR "${DATADIR}/com.github.bartzaalberg.lottery")
 
     set (EXEC_NAME "com.github.bartzaalberg.lottery")
-    set (VERSION "0.1")
-    set (VERSION_INFO "initial setup")
+    set (VERSION "1.3.0")
+    set (VERSION_INFO "version information")
 
     set (DEPS_PACKAGES
         gtk+-3.0

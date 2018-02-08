@@ -16,6 +16,18 @@
     </ul>
   </description>
  <releases>
+    <release version="1.3.0" date="2018-02-08">
+      <description>
+        <p>Added CSV import, code refactors</p>
+        <ul>
+          <li>Refactored some code</li>
+          <li>Added CSV import</li>
+          <li>Updated to granite 5.0</li>
+          <li>Image now uses gresource</li>
+          <li>Updated appcenter colors</li>
+        </ul>
+      </description>
+   </release>
    <release version="1.2.2" date="2017-11-01">
       <description>
         <p>Fixed the icon shadows!</p>
