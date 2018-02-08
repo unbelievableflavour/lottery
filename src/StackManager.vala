@@ -68,7 +68,7 @@ public class StackManager : Object {
 
     public void showWinnerView(){
         if(entryManager.getEntries().length == 0){
-                new Alert("Cannot choose a winner yet", "No names have been added yet");
+                new Alert(_("Cannot choose a winner yet"), _("No names have been added yet"));
                 return;            
         }
         winnerView.setWinner(entryManager.getWinner());

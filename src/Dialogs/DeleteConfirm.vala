@@ -5,20 +5,20 @@ public class DeleteConfirm : Gtk.Dialog {
 
     public DeleteConfirm(string repository){
         if(repository == ""){
-            new Alert("No person was selected", "Please select a person and try again.");  
+            new Alert(_("No person was selected"), _("Please select a person and try again."));  
             return;
         }
 
         var image = new Gtk.Image.from_icon_name ("dialog-warning", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var primary_label = new Gtk.Label ("Are you sure?");
+        var primary_label = new Gtk.Label (_("Are you sure?"));
         primary_label.selectable = true;
         primary_label.max_width_chars = 50;
         primary_label.wrap = true;
         primary_label.xalign = 0;
 
-        var secondary_label = new Gtk.Label ("You are about to remove this person from the list. Are you sure?");
+        var secondary_label = new Gtk.Label (_("You are about to remove this person from the list. Are you sure?"));
         secondary_label.use_markup = true;
         secondary_label.selectable = true;
         secondary_label.max_width_chars = 50;
@@ -41,13 +41,13 @@ public class DeleteConfirm : Gtk.Dialog {
         skip_taskbar_hint = true;
         transient_for = null;
         
-        var close_button = new Gtk.Button.with_label ("Cancel");
+        var close_button = new Gtk.Button.with_label (_("Cancel"));
         close_button.margin_end = 12;
         close_button.clicked.connect (() => {
             this.destroy ();
         });
 
-        var delete_button = new Gtk.Button.with_label ("Delete");
+        var delete_button = new Gtk.Button.with_label (_("Delete"));
         delete_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
         delete_button.clicked.connect (() => {
             listManager.getList().getRepositories("");

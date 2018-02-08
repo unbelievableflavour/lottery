@@ -6,18 +6,17 @@ public class AddEntry : Gtk.Dialog {
     Gtk.Entry aptEntry;
 
     public AddEntry(){
-        title = "Enter a name";
-        var description = "Please enter a unique name";
+        title = _("Enter a name");
+        var description = _("Please enter a unique name");
         set_default_size (630, 430);
         resizable = false;
  
         var image = new Gtk.Image.from_icon_name ("contact-new", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var aptLabel = new Gtk.Label ("apt:");
         aptEntry = new Gtk.Entry ();
-        aptEntry.set_placeholder_text ("Sam Johnson");
-        aptEntry.set_tooltip_text ("This is the link to the entry.");
+        aptEntry.set_placeholder_text (_("Sam Johnson"));
+        aptEntry.set_tooltip_text (_("This is the link to the entry."));
 
         var primary_label = new Gtk.Label ("<b>%s</b>".printf (title));
         primary_label.use_markup = true;
@@ -40,7 +39,6 @@ public class AddEntry : Gtk.Dialog {
         message_grid.attach (image, 0, 0, 1, 2);
         message_grid.attach (primary_label, 1, 0, 1, 1);
         message_grid.attach (secondary_label, 1, 1, 1, 1);
-        message_grid.attach (aptLabel, 0, 2, 1, 1);
         message_grid.attach (aptEntry, 1, 2, 1, 1);
         message_grid.show_all ();
 
@@ -51,13 +49,13 @@ public class AddEntry : Gtk.Dialog {
         skip_taskbar_hint = true;
         transient_for = null;
         
-        var close_button = new Gtk.Button.with_label ("Close");
+        var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.margin_right = 12;
         close_button.clicked.connect (() => {
             this.destroy ();
         });
 
-        var create_button = new Gtk.Button.with_label ("Create");
+        var create_button = new Gtk.Button.with_label (_("Create"));
         create_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);        
         create_button.clicked.connect (() => {
             createNewPerson();
@@ -89,12 +87,12 @@ public class AddEntry : Gtk.Dialog {
         var entries = entryManager.getEntries();
 
         if(isNotValid(aptEntry.text)){
-            new Alert("Please enter a name", "You didn't enter a name. Please do so to continue!");
+            new Alert(_("Please enter a name"), _("You didn't enter a name. Please do so to continue!"));
             return;
         }
 
         if(alreadyExists(aptEntry.text, entries)){
-            new Alert("This person is already in the list", "Please choose a different name");
+            new Alert(_("This person is already in the list"), _("Please choose a different name"));
             return;
         }
         

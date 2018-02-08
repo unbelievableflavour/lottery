@@ -4,26 +4,26 @@ public class Cheatsheet : Gtk.Dialog {
     private HeaderLabel general_header = new HeaderLabel ("Cheatsheet");
 
     public Cheatsheet(){
-        title = "Cheatsheet";
+        title = _("Cheatsheet");
         resizable = false;
         deletable = false;
 
         Gtk.Label[] labels = {};
         Gtk.Label[] shortcuts = {};
 
-        labels += generateLabel ("Add a new name");
+        labels += generateLabel (_("Add a new name"));
         shortcuts += generateEntry ("ctrl + a");
 
-        labels += generateLabel ("Randomly choose a winner");
+        labels += generateLabel (_("Randomly choose a winner"));
         shortcuts += generateEntry ("ctrl + w");
 
-        labels += generateLabel ("Search");
+        labels += generateLabel (_("Search"));
         shortcuts += generateEntry ("ctrl + f");
 
-        labels += generateLabel ("Open the cheatsheet");
+        labels += generateLabel (_("Open the cheatsheet"));
         shortcuts += generateEntry ("ctrl + h");
 
-        var close_button = new Gtk.Button.with_label ("Close");
+        var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.margin_right = 6;
         close_button.clicked.connect (() => {
             this.destroy ();

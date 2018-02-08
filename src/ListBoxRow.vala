@@ -24,7 +24,7 @@ public class ListBoxRow : Gtk.ListBoxRow {
     public Gtk.EventBox generateDeleteButton(string entry){
         var delete_button = new Gtk.EventBox();
         delete_button.add(delete_image);
-        delete_button.set_tooltip_text("Remove this name");
+        delete_button.set_tooltip_text(_("Remove this name"));
         delete_button.button_press_event.connect (() => {
             entryManager.removeEntry(entry);
             listManager.getList().getRepositories("");

@@ -46,15 +46,15 @@ public class HeaderBar : Gtk.HeaderBar {
     
     private void generateCheatsheetButton(){
         cheatsheet_button.no_show_all = true;
-        cheatsheet_button.set_tooltip_text("A list of available shortcuts");
+        cheatsheet_button.set_tooltip_text(_("A list of available shortcuts"));
         cheatsheet_button.clicked.connect (() => {
             new Cheatsheet ();
         });
     }
 
     private void generateSearchEntry(){
-        searchEntry.set_placeholder_text("Search names");
-        searchEntry.set_tooltip_text("Search for names");
+        searchEntry.set_placeholder_text(_("Search names"));
+        searchEntry.set_tooltip_text(_("Search for names"));
         searchEntry.search_changed.connect (() => {
             listManager.getList().getRepositories(searchEntry.text); 
         });
@@ -63,7 +63,7 @@ public class HeaderBar : Gtk.HeaderBar {
     private void generateChooseWinnerButton(){
         var icon = new Gtk.Image.from_icon_name ("lottery-crown", Gtk.IconSize.LARGE_TOOLBAR);
         lottery_button.set_image(icon);
-        lottery_button.set_tooltip_text("Randomly generate a winner");
+        lottery_button.set_tooltip_text(_("Randomly generate a winner"));
         lottery_button.clicked.connect (() => {
             stackManager.showWinnerView();    
         });
@@ -71,14 +71,14 @@ public class HeaderBar : Gtk.HeaderBar {
     }
 
     private void generateCreateButton(){
-        create_button.set_tooltip_text("Add a new name");
+        create_button.set_tooltip_text(_("Add a new name"));
         create_button.clicked.connect (() => {
             new AddEntry();
         });
     }
 
     private void generateImportButton(){
-        import_button.set_tooltip_text("Import names from CSV");
+        import_button.set_tooltip_text(_("Import names from CSV"));
         import_button.clicked.connect (importNames);
     }
 
@@ -91,7 +91,7 @@ public class HeaderBar : Gtk.HeaderBar {
 
         var file = File.new_for_path (path);
         if (!file.query_exists ()) {
-            new Alert("File doesnt exist", "File " + file.get_path () + " doesn't exist");
+            new Alert(_("File doesnt exist"), _("File ") + file.get_path () + _(" doesn't exist"));
             return;
         }
 
@@ -120,7 +120,7 @@ public class HeaderBar : Gtk.HeaderBar {
     }
 
     private void generateReturnButton(){
-        return_button.label = "Back";
+        return_button.label = _("Back");
         return_button.no_show_all = true;
         return_button.get_style_context ().add_class ("back-button");
         return_button.visible = false;
