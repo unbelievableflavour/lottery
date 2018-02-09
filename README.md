@@ -19,7 +19,7 @@ An application which will randomly choose a winner from a list names.
 
 ## Installation
 
-first you will need to install elementary SDK
+First you will need to install elementary SDK
 
  `sudo apt install elementary-sdk`
 
