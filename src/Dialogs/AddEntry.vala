@@ -50,7 +50,7 @@ public class AddEntry : Gtk.Dialog {
         transient_for = null;
         
         var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.margin_right = 12;
+        close_button.set_margin_end(12);
         close_button.clicked.connect (() => {
             this.destroy ();
         });
