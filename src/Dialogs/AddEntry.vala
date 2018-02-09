@@ -16,7 +16,7 @@ public class AddEntry : Gtk.Dialog {
 
         aptEntry = new Gtk.Entry ();
         aptEntry.set_placeholder_text (_("Sam Johnson"));
-        aptEntry.set_tooltip_text (_("This is the link to the entry."));
+        aptEntry.set_tooltip_text (_("Please enter the name here."));
 
         var primary_label = new Gtk.Label ("<b>%s</b>".printf (title));
         primary_label.use_markup = true;
