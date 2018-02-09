@@ -16,6 +16,17 @@
     </ul>
   </description>
  <releases>
+    <release version="1.3.1" date="2018-02-09">
+      <description>
+        <p>Updated icons, translations support</p>
+        <ul>
+          <li>Updated app logo icons</li>
+          <li>Updated icons inside the app</li>
+          <li>Added translations support</li>
+          <li>Added dutch translation</li>
+        </ul>
+      </description>
+   </release>
     <release version="1.3.0" date="2018-02-08">
       <description>
         <p>Added CSV import, code refactors</p>
