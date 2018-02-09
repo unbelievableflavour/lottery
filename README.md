@@ -15,11 +15,11 @@ Determine who will be the winner
 
 ### lottery for elementary OS
 
-An application who will randomly choose in a list of filled in people
+An application which will randomly choose a winner from a list names.
 
 ## Installation
 
-As first you need elementary SDK
+first you will need to install elementary SDK
 
  `sudo apt install elementary-sdk`
 
