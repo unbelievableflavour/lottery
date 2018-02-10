@@ -15,7 +15,7 @@
     set (PKGDATADIR "${DATADIR}/com.github.bartzaalberg.lottery")
 
     set (EXEC_NAME "com.github.bartzaalberg.lottery")
-    set (VERSION "1.3.1")
+    set (VERSION "1.3.2")
     set (VERSION_INFO "version information")
 
     set (DEPS_PACKAGES

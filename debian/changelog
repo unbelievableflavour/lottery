@@ -1,3 +1,10 @@
+com.github.bartzaalberg.lottery (1.3.2) UNSTABLE; urgency=low
+
+  * Added polish translation
+  * Added import shortcut to cheatsheet
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Sat, 10 Feb 2018 21:56:00 +0200
+
 com.github.bartzaalberg.lottery (1.3.1) UNSTABLE; urgency=low
 
   * Updated app logo icons
