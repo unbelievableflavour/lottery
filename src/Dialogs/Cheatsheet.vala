@@ -22,6 +22,9 @@ public class Cheatsheet : Gtk.Dialog {
 
         labels += generateLabel (_("Open the cheatsheet"));
         shortcuts += generateEntry ("ctrl + h");
+        
+        labels += generateLabel (_("Import names from CSV"));
+        shortcuts += generateEntry ("ctrl + i");
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.margin_right = 6;

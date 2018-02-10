@@ -137,6 +137,10 @@ msgstr ""
 msgid "Open the cheatsheet"
 msgstr ""
 
+#: ../src/Dialogs/Cheatsheet.vala:26
+msgid "Import names from CSV"
+msgstr ""
+
 #: ../src/Dialogs/DeleteConfirm.vala:8
 msgid "No person was selected"
 msgstr ""
