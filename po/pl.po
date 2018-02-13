@@ -46,7 +46,7 @@ msgstr "Wstecz"
 
 #: ../src/Views/WelcomeView.vala:7
 msgid "Add some names!"
-msgstr "Dodaj jakieś nazwy"
+msgstr "Dodaj jakieś nazwy!"
 
 #: ../src/Views/WelcomeView.vala:7
 msgid "Click the upper left button"
@@ -70,11 +70,11 @@ msgstr "osoba"
 
 #: ../src/Dialogs/AddEntry.vala:9 
 msgid "Enter a name" 
-msgstr "Podaj nazwę"
+msgstr "Dodaj nazwę"
 
 #: ../src/Views/NotFoundView.vala:19
 msgid "Please enter a unique name" 
-msgstr "Proszę podać niepowtarzalną nazwę"
+msgstr "Nazwa powinna być unikatowa"
  
 #: ../src/Dialogs/AddEntry.vala:18 
 msgid "Sam Johnson" 
@@ -82,7 +82,7 @@ msgstr "Jan Kowalski"
  
 #: ../src/Dialogs/AddEntry.vala:19 
 msgid "Please enter the name here." 
-msgstr "Proszę tu wpisać nazwę."
+msgstr "Tutaj wprowadź nazwę."
  
 #: ../src/Dialogs/AddEntry.vala:52 ../src/Dialogs/Cheatsheet.vala:26 
 msgid "Close" 
@@ -94,19 +94,19 @@ msgstr "Utwórz"
  
 #: ../src/Dialogs/AddEntry.vala:90 
 msgid "Please enter a name" 
-msgstr "Proszę podać nazwę" 
+msgstr "Dodawanie nazwy" 
  
 #: ../src/Dialogs/AddEntry.vala:90 
 msgid "You didn't enter a name. Please do so to continue!" 
-msgstr "Nie podałeś nazwy. Dodaj ją by kontynuować!"
+msgstr "Nie wpisano nazwy. Dodaj ją by kontynuować!"
  
 #: ../src/Dialogs/AddEntry.vala:95 
 msgid "This person is already in the list" 
-msgstr "Ta osoba jest już na liście"
+msgstr "Ta nazwa jest już na liście"
 
 #: ../src/Dialogs/AddEntry.vala:95 
 msgid "Please choose a different name" 
-msgstr "Proszę podać inną nazwę"
+msgstr "Wybierz inną nazwę"
 
 #: ../src/Dialogs/Cheatsheet.vala:7
 msgid "Cheatsheet"
@@ -126,11 +126,11 @@ msgstr "Otwórz ściągawkę"
 
 #: ../src/Dialogs/DeleteConfirm.vala:8
 msgid "No person was selected"
-msgstr "Nie wybrano żadnej osoby"
+msgstr "Nie wybrano żadnej nazwy"
 
 #: ../src/Dialogs/DeleteConfirm.vala:8
 msgid "Please select a person and try again."
-msgstr "Proszę wybrać osobę i spróbować ponownie."
+msgstr "Wybierz nazwę i spróbuj ponownie."
 
 #: ../src/Dialogs/DeleteConfirm.vala:15
 msgid "Are you sure?"
@@ -138,7 +138,7 @@ msgstr "Jesteś pewien?"
 
 #: ../src/Dialogs/DeleteConfirm.vala:21
 msgid "You are about to remove this person from the list. Are you sure?"
-msgstr "Usuniesz tą osobę z listy. Jesteś pewien?"
+msgstr "Usuniesz tą nazwę z listy. Jesteś pewien?"
 
 #: ../src/Dialogs/DeleteConfirm.vala:44
 msgid "Cancel"
