@@ -25,7 +25,7 @@ parts:
     granite:
         plugin: cmake
         source: https://github.com/elementary/granite.git
-        source-tag: 0.5
+        source-tag: '0.5'
         configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
         build-packages:
           - build-essential
