@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Lottery
+GenericName=Lottery
+Comment=Application to determine a winner
+Categories=GTK;Utility;
+Exec=com.github.bartzaalberg.lottery
+Icon=${SNAP}/meta/com.github.bartzaalberg.lottery.svg
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=lottery
+Keywords=guess;lottery;
+
