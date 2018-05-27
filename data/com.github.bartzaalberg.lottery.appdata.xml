@@ -16,11 +16,20 @@
     </ul>
   </description>
  <releases>
+  <release version="1.3.3" date="2018-05-27">
+      <description>
+        <p>Updated polish translation and a new shortcut</p>
+        <ul>
+          <li>Updated Polish translation</li>
+          <li>Added quitting shortcut</li>
+        </ul>
+      </description>
+   </release>
     <release version="1.3.2" date="2018-02-10">
       <description>
         <p>The polish translation</p>
         <ul>
-          <li>Added polish translation</li>
+          <li>Added Polish translation</li>
           <li>Added import shortcut to cheatsheet</li>
         </ul>
       </description>
