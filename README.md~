@@ -34,12 +34,14 @@ These dependencies must be present before building
  
  `sudo apt install valac libgtk-3-dev libgranite-dev`
 
+
 ### Building
 ```
-meson build --prefix=/usr
+mkdir build
 cd build
-ninja
+cmake ..
+make
 ```
 
 ### Installing
-`sudo ninja install`
+`sudo make install`
