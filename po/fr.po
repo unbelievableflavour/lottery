@@ -3,3 +3,163 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: ../src/Components/HeaderBar.vala:49
+msgid "A list of available shortcuts"
+msgstr "Une liste des raccourcis disponibles"
+
+#: ../src/Components/HeaderBar.vala:56
+msgid "Search names"
+msgstr "Rechercher des noms"
+
+#: ../src/Components/HeaderBar.vala:57
+msgid "Search for names"
+msgstr "Rechercher des nom"
+
+#: ../src/Components/HeaderBar.vala:66
+msgid "Randomly generate a winner"
+msgstr "Générer un gagnant au hasard"
+
+#: ../src/Components/HeaderBar.vala:74 ../src/Dialogs/Cheatsheet.vala:14
+msgid "Add a new name"
+msgstr "Ajouter un nouveau nom"
+
+#: ../src/Components/HeaderBar.vala:81
+msgid "Import names from CSV"
+msgstr "Importer des noms depuis un fichier CSV"
+
+#: ../src/Components/HeaderBar.vala:94
+msgid "File doesnt exist"
+msgstr "Le fichier n'existe pas"
+
+#: ../src/Components/HeaderBar.vala:94
+msgid "File "
+msgstr "Le fichier "
+
+#: ../src/Components/HeaderBar.vala:94
+msgid " doesn't exist"
+msgstr " n'existe pas"
+
+#: ../src/Components/HeaderBar.vala:123
+msgid "Back"
+msgstr Retour"
+
+#: ../src/Views/WelcomeView.vala:7
+msgid "Add some names!"
+msgstr "Ajoutez quelques noms !"
+
+#: ../src/Views/WelcomeView.vala:7
+msgid "Click the upper left button"
+msgstr "Cliquez sur le bouton supérieur gauche"
+
+#: ../src/Views/NotFoundView.vala:7
+msgid "Nothing was found"
+msgstr "Rien n'a été trouvé"
+
+#: ../src/Views/NotFoundView.vala:7
+msgid "Try searching for something else"
+msgstr "Essayez de chercher autre chose"
+
+#: ../src/Views/WinnerView.vala:6
+msgid "The winner is..."
+msgstr "Le gagnant est..."
+
+#: ../src/Views/WinnerView.vala:6
+msgid "him"
+msgstr "lui"
+
+#: ../src/Dialogs/AddEntry.vala:9
+msgid "Enter a name"
+msgstr "Entrez un nom"
+
+#: ../src/Dialogs/AddEntry.vala:10
+msgid "Please enter a unique name"
+msgstr "Veuillez entrer un nom unique"
+
+#: ../src/Dialogs/AddEntry.vala:18
+msgid "Sam Johnson"
+msgstr "Jean Dupont"
+
+#: ../src/Dialogs/AddEntry.vala:19
+msgid "Please enter the name here."
+msgstr "Veuillez entrer le nom ici."
+
+#: ../src/Dialogs/AddEntry.vala:52 ../src/Dialogs/Cheatsheet.vala:26
+msgid "Close"
+msgstr "Fermer"
+
+#: ../src/Dialogs/AddEntry.vala:58
+msgid "Create"
+msgstr "Créer"
+
+#: ../src/Dialogs/AddEntry.vala:90
+msgid "Please enter a name"
+msgstr "Veuillez entrer un nom"
+
+#: ../src/Dialogs/AddEntry.vala:90
+msgid "You didn't enter a name. Please do so to continue!"
+msgstr "Vous n'avez pas entré de nom. Veuillez le faire pour continuer !"
+
+#: ../src/Dialogs/AddEntry.vala:95
+msgid "This person is already in the list"
+msgstr "Cette personne est déjà dans la liste"
+
+#: ../src/Dialogs/AddEntry.vala:95
+msgid "Please choose a different name"
+msgstr "Veuillez chosir un nom différent"
+
+#: ../src/Dialogs/Cheatsheet.vala:7
+msgid "Cheatsheet"
+msgstr "Raccourcis clavier"
+
+#: ../src/Dialogs/Cheatsheet.vala:17
+msgid "Randomly choose a winner"
+msgstr "Générer un gagnant au hasard"
+
+#: ../src/Dialogs/Cheatsheet.vala:20
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../src/Dialogs/Cheatsheet.vala:23
+msgid "Open the cheatsheet"
+msgstr "Ouvrir les raccourcis claviers"
+
+#: ../src/Dialogs/Cheatsheet.vala:26
+msgid "Import names from CSV"
+msgstr "Importer des noms depuis un fichier CSV"
+
+#: ../src/Dialogs/DeleteConfirm.vala:8
+msgid "No person was selected"
+msgstr "Personne n'a été sélectionné"
+
+#: ../src/Dialogs/DeleteConfirm.vala:8
+msgid "Please select a person and try again."
+msgstr "Veuillez sélectionner une personne est recommencer."
+
+#: ../src/Dialogs/DeleteConfirm.vala:15
+msgid "Are you sure?"
+msgstr "Êtes-vous sûr ?"
+
+#: ../src/Dialogs/DeleteConfirm.vala:21
+msgid "You are about to remove this person from the list. Are you sure?"
+msgstr "Vous êtes sur le point de retirer cette personne de la liste. Êtes-vous sûr ?"
+
+#: ../src/Dialogs/DeleteConfirm.vala:44
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../src/Dialogs/DeleteConfirm.vala:50
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../src/ListBoxRow.vala:27
+msgid "Remove this name"
+msgstr "Retirer ce nom"
+
+#: ../src/StackManager.vala:71
+msgid "Cannot choose a winner yet"
+msgstr "Impossible de choisir un gagnant pour le moment"
+
+#: ../src/StackManager.vala:71
+msgid "No names have been added yet"
+msgstr "Aucun nom n'a été ajouté pour le moment"
