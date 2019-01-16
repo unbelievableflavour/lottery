@@ -42,7 +42,7 @@ msgstr " n'existe pas"
 
 #: ../src/Components/HeaderBar.vala:123
 msgid "Back"
-msgstr Retour"
+msgstr "Retour"
 
 #: ../src/Views/WelcomeView.vala:7
 msgid "Add some names!"
