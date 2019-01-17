@@ -1,3 +1,11 @@
+com.github.bartzaalberg.lottery (1.3.6) STABLE; urgency=low
+
+  * Fixed translations
+  * Added French translation
+  * Application is now single-instance
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Thu, 17 Jan 2019 20:20:00 +0200
+
 com.github.bartzaalberg.lottery (1.3.5) STABLE; urgency=low
 
   * Migrated to Meson
