@@ -3,6 +3,8 @@ using Granite.Widgets;
 namespace Application {
 public class App:Granite.Application{
 
+    public static MainWindow window = null;
+
     construct {
         application_id = Constants.APPLICATION_ID;
         program_name = Constants.APP_NAME;
@@ -15,24 +17,27 @@ public class App:Granite.Application{
         bug_url = Constants.BUG_URL;
     }
 
-    public override void activate() {
+    protected override void activate () {
+        new_window ();
+    }
+
+    public void new_window () {
+        if (window != null) {
+            window.present ();
+            return;
+        }
+
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/com/github/bartzaalberg/lottery");
 
-        var window = new MainWindow ();
-        window.destroy.connect (Gtk.main_quit);
-        window.show_all();
+        window = new MainWindow (this);
+        window.show_all ();
     }
 
-    public static int main(string[] args) {
-    
-        new App().run(args);
-
-        Gtk.main();
- 
-        return 0;
+    public static int main (string[] args) {
+        var app = new Application.App ();
+        return app.run (args);
     }
- 
 }
 }
 
