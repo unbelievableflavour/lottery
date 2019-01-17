@@ -24,7 +24,7 @@ msgstr "Générer un gagnant au hasard"
 msgid "Add a new name"
 msgstr "Ajouter un nouveau nom"
 
-#: ../src/Components/HeaderBar.vala:81
+#: ../src/Components/HeaderBar.vala:81 ../src/Dialogs/Cheatsheet.vala:26
 msgid "Import names from CSV"
 msgstr "Importer des noms depuis un fichier CSV"
 
@@ -123,10 +123,6 @@ msgstr "Rechercher"
 #: ../src/Dialogs/Cheatsheet.vala:23
 msgid "Open the cheatsheet"
 msgstr "Ouvrir les raccourcis claviers"
-
-#: ../src/Dialogs/Cheatsheet.vala:26
-msgid "Import names from CSV"
-msgstr "Importer des noms depuis un fichier CSV"
 
 #: ../src/Dialogs/DeleteConfirm.vala:8
 msgid "No person was selected"
