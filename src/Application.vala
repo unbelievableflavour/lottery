@@ -1,7 +1,7 @@
 using Granite.Widgets;
 
 namespace Application {
-public class App:Granite.Application{
+public class App:Granite.Application {
 
     public static MainWindow window = null;
 

@@ -1,22 +1,22 @@
 namespace Application {
 public class AddEntry : Gtk.Dialog {
-  
-    private EntryManager entryManager = EntryManager.get_instance();
-    ListManager listManager = ListManager.get_instance();
-    Gtk.Entry aptEntry;
 
-    public AddEntry(){
+    private EntryManager entry_manager = EntryManager.get_instance ();
+    ListManager list_manager = ListManager.get_instance ();
+    Gtk.Entry apt_entry;
+
+    public AddEntry () {
         title = _("Enter a name");
         var description = _("Please enter a unique name");
         set_default_size (630, 430);
         resizable = false;
- 
+
         var image = new Gtk.Image.from_icon_name ("contact-new", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        aptEntry = new Gtk.Entry ();
-        aptEntry.set_placeholder_text (_("Sam Johnson"));
-        aptEntry.set_tooltip_text (_("Please enter the name here."));
+        apt_entry = new Gtk.Entry ();
+        apt_entry.set_placeholder_text (_("Sam Johnson"));
+        apt_entry.set_tooltip_text (_("Please enter the name here."));
 
         var primary_label = new Gtk.Label ("<b>%s</b>".printf (title));
         primary_label.use_markup = true;
@@ -39,26 +39,26 @@ public class AddEntry : Gtk.Dialog {
         message_grid.attach (image, 0, 0, 1, 2);
         message_grid.attach (primary_label, 1, 0, 1, 1);
         message_grid.attach (secondary_label, 1, 1, 1, 1);
-        message_grid.attach (aptEntry, 1, 2, 1, 1);
+        message_grid.attach (apt_entry, 1, 2, 1, 1);
         message_grid.show_all ();
 
         get_content_area ().add (message_grid);
 
         resizable = false;
-        deletable =  false;
+        deletable = false;
         skip_taskbar_hint = true;
         transient_for = null;
-        
+
         var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.set_margin_end(12);
+        close_button.set_margin_end (12);
         close_button.clicked.connect (() => {
             this.destroy ();
         });
 
         var create_button = new Gtk.Button.with_label (_("Create"));
-        create_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);        
+        create_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         create_button.clicked.connect (() => {
-            createNewPerson();
+            create_new_person ();
         });
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
@@ -71,47 +71,47 @@ public class AddEntry : Gtk.Dialog {
         get_content_area ().add (button_box);
         this.show_all ();
 
-        key_press_event.connect ((e) => { 
-            switch (e.keyval) { 
+        key_press_event.connect ((e) => {
+            switch (e.keyval) {
                 case Gdk.Key.Return:
-                  createNewPerson(); 
-                  break; 
+                  create_new_person ();
+                  break;
             }
- 
-            return false; 
+
+            return false;
         });
 
     }
 
-    public void createNewPerson(){
-        var entries = entryManager.getEntries();
+    public void create_new_person () {
+        var entries = entry_manager.get_entries ();
 
-        if(isNotValid(aptEntry.text)){
-            new Alert(_("Please enter a name"), _("You didn't enter a name. Please do so to continue!"));
+        if (is_not_valid (apt_entry.text)) {
+            new Alert (_("Please enter a name"), _("You didn't enter a name. Please do so to continue!"));
             return;
         }
 
-        if(alreadyExists(aptEntry.text, entries)){
-            new Alert(_("This person is already in the list"), _("Please choose a different name"));
+        if (already_exists (apt_entry.text, entries)) {
+            new Alert (_("This person is already in the list"), _("Please choose a different name"));
             return;
         }
-        
-        entryManager.addEntry(aptEntry.text);
 
-        listManager.getList().getRepositories("");
+        entry_manager.add_entry (apt_entry.text);
+
+        list_manager.get_list ().get_repositories ("");
         this.destroy ();
     }
 
-    public bool isNotValid(string inputField){
-        if(inputField ==  ""){
+    public bool is_not_valid (string input_field) {
+        if (input_field == "") {
             return true;
         }
         return false;
     }
 
-    public bool alreadyExists(string newEntry, string[] entries){
+    public bool already_exists (string new_entry, string[] entries) {
         foreach (string entry in entries) {
-           if(entry == newEntry) {
+           if (entry == new_entry) {
                 return true;
            }
         }

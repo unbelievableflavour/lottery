@@ -1,11 +1,11 @@
 namespace Application {
 public class DeleteConfirm : Gtk.Dialog {
 
-    ListManager listManager = ListManager.get_instance();
+    ListManager list_manager = ListManager.get_instance ();
 
-    public DeleteConfirm(string repository){
-        if(repository == ""){
-            new Alert(_("No person was selected"), _("Please select a person and try again."));  
+    public DeleteConfirm (string repository) {
+        if (repository == "") {
+            new Alert (_("No person was selected"), _("Please select a person and try again."));
             return;
         }
 
@@ -37,10 +37,10 @@ public class DeleteConfirm : Gtk.Dialog {
         get_content_area ().add (message_grid);
 
         resizable = false;
-        deletable =  false;
+        deletable = false;
         skip_taskbar_hint = true;
         transient_for = null;
-        
+
         var close_button = new Gtk.Button.with_label (_("Cancel"));
         close_button.margin_end = 12;
         close_button.clicked.connect (() => {
@@ -50,7 +50,7 @@ public class DeleteConfirm : Gtk.Dialog {
         var delete_button = new Gtk.Button.with_label (_("Delete"));
         delete_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
         delete_button.clicked.connect (() => {
-            listManager.getList().getRepositories("");
+            list_manager.get_list ().get_repositories ("");
             this.destroy ();
         });
 

@@ -61,8 +61,8 @@ msgid "Try searching for something else"
 msgstr "Zoek naar wat iemand anders"
 
 #: ../src/Views/WinnerView.vala:6
-msgid "The winner is..."
-msgstr "De winner is..."
+msgid "The winner is"
+msgstr "De winnaar is..."
 
 #: ../src/Views/WinnerView.vala:6
 msgid "him"

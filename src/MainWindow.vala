@@ -1,12 +1,12 @@
 using Granite.Widgets;
 
 namespace Application {
-public class MainWindow : Gtk.Window{
+public class MainWindow : Gtk.Window {
 
-    private ListManager listManager = ListManager.get_instance();
-    private StackManager stackManager = StackManager.get_instance();
+    private ListManager list_manager = ListManager.get_instance ();
+    private StackManager stack_manager = StackManager.get_instance ();
 
-    private HeaderBar headerBar = HeaderBar.get_instance();
+    private HeaderBar header_bar = HeaderBar.get_instance ();
 
     public MainWindow (Gtk.Application application) {
         Object (application: application,
@@ -16,48 +16,48 @@ public class MainWindow : Gtk.Window{
     }
 
     construct {
-        set_titlebar (headerBar);
+        set_titlebar (header_bar);
 
-        stackManager.loadViews(this);
+        stack_manager.load_views (this);
 
-        listManager.getList().getRepositories("");
+        list_manager.get_list ().get_repositories ("");
 
-        stackManager.getStack().visible_child_name = "welcome-view";
+        stack_manager.get_stack ().visible_child_name = "welcome-view";
 
-        addShortcuts();
+        add_shortcuts ();
     }
 
-    private void addShortcuts(){
+    private void add_shortcuts () {
         key_press_event.connect ((e) => {
             switch (e.keyval) {
                 case Gdk.Key.a:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                        new AddEntry();
+                        new AddEntry ();
                     }
                     break;
                 case Gdk.Key.i:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                        headerBar.importNames();
+                        header_bar.import_names ();
                     }
                     break;
                 case Gdk.Key.w:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                        stackManager.showWinnerView();
+                        stack_manager.show_winner_view ();
                     }
                     break;
                 case Gdk.Key.h:
                     if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                        new Cheatsheet();
+                        new Cheatsheet ();
                     }
                     break;
                 case Gdk.Key.f:
                   if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                    headerBar.searchEntry.grab_focus();
+                    header_bar.search_entry.grab_focus ();
                   }
                   break;
                 case Gdk.Key.q:
                   if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                    this.destroy();
+                    this.destroy ();
                   }
                   break;
             }

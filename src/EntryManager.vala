@@ -1,44 +1,44 @@
 using Granite.Widgets;
 
 namespace Application {
-public class EntryManager : Gtk.ListBox{
+public class EntryManager : Gtk.ListBox {
 
     static EntryManager? instance;
     string[] entries = new string[0];
 
-    EntryManager() {
+    EntryManager () {
     }
- 
-    public static EntryManager get_instance() {
+
+    public static EntryManager get_instance () {
         if (instance == null) {
-            instance = new EntryManager();
+            instance = new EntryManager ();
         }
         return instance;
     }
 
-    public string[] getEntries (){
+    public string[] get_entries () {
         return entries;
     }
 
-    public void addEntry (string entry){
+    public void add_entry (string entry) {
         entries += entry;
     }
-    
-    public void removeEntry(string removedEntry){
-        string[] newList = new string[0];
-        
+
+    public void remove_entry (string removed_entry) {
+        string[] new_list = new string[0];
+
         foreach (string entry in entries) {
-           if(entry != removedEntry) {
-                newList += entry;
+           if (entry != removed_entry) {
+                new_list += entry;
            }
         }
 
-        entries = newList;
+        entries = new_list;
     }
 
-    public string getWinner(){
-        int randomIndex = GLib.Random.int_range (0, entries.length);
-        return entries[randomIndex];
+    public string get_winner () {
+        int random_index = GLib.Random.int_range (0, entries.length);
+        return entries[random_index];
     }
 }
 }
