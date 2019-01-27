@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.bartzaalberg.alias package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-24 19:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:6
+#: data/com.github.bartzaalberg.lottery.desktop.in:3
+msgid "Lottery"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:7
+#: data/com.github.bartzaalberg.lottery.desktop.in:4
+msgid "Who will be the winner?"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:9
+msgid "A tool to determine who will be the winner."
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:10
+msgid "Features:"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:12
+msgid "Add and remove names!"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:13
+msgid "Randomly generate a winner!"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:14
+msgid "Use cool shortcuts to make it easier!"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:15
+msgid "Import CSV files"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:30
+msgid "Bart Zaalberg"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.desktop.in:6
+msgid "com.github.bartzaalberg.lottery"
+msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.desktop.in:11
+msgid "guess;lottery;"
+msgstr ""

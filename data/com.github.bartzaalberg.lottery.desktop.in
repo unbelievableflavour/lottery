@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Lottery
 GenericName=Lottery
-Comment=Application to determine a winner
+Comment=Who will be the winner?
 Categories=GTK;Utility;
 Exec=com.github.bartzaalberg.lottery
 Icon=com.github.bartzaalberg.lottery
