@@ -62,7 +62,6 @@ public class StackManager : Object {
         });
 
         window.add (stack);
-        window.show_all ();
     }
 
     public void show_winner_view () {

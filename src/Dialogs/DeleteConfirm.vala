@@ -28,7 +28,7 @@ public class DeleteConfirm : Gtk.Dialog {
         var message_grid = new Gtk.Grid ();
         message_grid.column_spacing = 12;
         message_grid.row_spacing = 6;
-        message_grid.margin_left = message_grid.margin_right = 12;
+        message_grid.margin_start = message_grid.margin_end = 12;
         message_grid.attach (image, 0, 0, 1, 2);
         message_grid.attach (primary_label, 1, 0, 1, 1);
         message_grid.attach (secondary_label, 1, 1, 1, 1);
