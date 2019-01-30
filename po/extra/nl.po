@@ -6,40 +6,52 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:6
-#: data/com.github.bartzaalberg.alias.desktop.in:3
-msgid "Alias"
-msgstr "Alias"
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:6
+#: data/com.github.bartzaalberg.lottery.desktop.in:3
+msgid "Lottery"
+msgstr "Lotery"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:7
-#: data/com.github.bartzaalberg.alias.desktop.in:4
-msgid "Simplify your commands"
-msgstr "Vereenvoudig je Commando's"
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:7
+#: data/com.github.bartzaalberg.lottery.desktop.in:4
+msgid "Who will be the winner?"
+msgstr "Wie zal er winnen?"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:9
-msgid "A tool to manage your bash aliases"
-msgstr "Een applicatie voor het beheren van je bash aliasen"
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:9
+msgid "A tool to determine who will be the winner."
+msgstr "Een tool om te bepalen wie er gewonnen heeft."
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:10
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:10
 msgid "Features:"
-msgstr "Kenmerken"
+msgstr "Kenmerken:"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:12
-msgid "Manage your aliases"
-msgstr "Beheer je aliasen"
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:12
+msgid "Add and remove names!"
+msgstr "Voeg namen toe en verwijder ze!"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:13
-msgid "Use handy shortcuts to navigate the app"
-msgstr "Gebruik handige shortcuts om door je applicatie te navigeren "
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:13
+msgid "Randomly generate a winner!"
+msgstr "Genereer een willekeurige winner!"
 
-#: data/com.github.bartzaalberg.alias.appdata.xml.in:30
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:14
+msgid "Use cool shortcuts to make it easier!"
+msgstr "Gebruik leuke shortcuts om het makkelijk te maken!"
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:15
+msgid "Import CSV files"
+msgstr "Importeer CSV bestanden"
+
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:30
 msgid "Bart Zaalberg"
 msgstr "Bart Zaalberg"
 
-#: data/com.github.bartzaalberg.alias.desktop.in:6
-msgid "com.github.bartzaalberg.alias"
-msgstr "com.github.bartzaalberg.alias"
+#: data/com.github.bartzaalberg.lottery.desktop.in:6
+msgid "com.github.bartzaalberg.lottery"
+msgstr "com.github.bartzaalberg.lottery"
 
-#: data/com.github.bartzaalberg.alias.desktop.in:11
-msgid "shortcuts;alias;commands;aliases;bash;"
-msgstr "shortcuts;alias;commands;aliases;bash;"
+#: data/com.github.bartzaalberg.lottery.desktop.in:11
+msgid "guess;lottery;"
+msgstr "guess;lottery;"
+
+#: data/com.github.bartzaalberg.lottery.desktop.in:16
+msgid "About Lottery"
+msgstr "Over Lottery"

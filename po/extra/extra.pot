@@ -62,3 +62,7 @@ msgstr ""
 #: data/com.github.bartzaalberg.lottery.desktop.in:11
 msgid "guess;lottery;"
 msgstr ""
+
+#: data/com.github.bartzaalberg.lottery.desktop.in:16
+msgid "About Lottery"
+msgstr ""
