@@ -46,7 +46,7 @@ public class HeaderBar : Gtk.HeaderBar {
 
     private void generate_cheatsheet_button () {
         cheatsheet_button.no_show_all = true;
-        cheatsheet_button.set_tooltip_text (_("A list of available shortcuts"));
+        cheatsheet.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H"}, _("A list of available shortcuts"));
         cheatsheet_button.clicked.connect (() => {
             new Cheatsheet ();
         });
@@ -54,7 +54,7 @@ public class HeaderBar : Gtk.HeaderBar {
 
     private void generate_search_entry () {
         search_entry.set_placeholder_text (_("Search names"));
-        search_entry.set_tooltip_text (_("Search for names"));
+        search_entry.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>F"}, _("Search for names"));
         search_entry.search_changed.connect (() => {
             list_manager.get_list ().get_repositories (search_entry.text);
         });
@@ -63,7 +63,7 @@ public class HeaderBar : Gtk.HeaderBar {
     private void generate_choose_winner_button () {
         var icon = new Gtk.Image.from_icon_name ("lottery-crown", Gtk.IconSize.LARGE_TOOLBAR);
         lottery_button.set_image (icon);
-        lottery_button.set_tooltip_text (_("Randomly generate a winner"));
+        lottery_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>W"}, _("Randomly generate a winner"));
         lottery_button.clicked.connect (() => {
             stack_manager.show_winner_view ();
         });
@@ -71,14 +71,14 @@ public class HeaderBar : Gtk.HeaderBar {
     }
 
     private void generate_create_button () {
-        create_button.set_tooltip_text (_("Add a new name"));
+        create_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>W"}, _("Add a new name"));
         create_button.clicked.connect (() => {
             new AddEntry ();
         });
     }
 
     private void generate_import_button () {
-        import_button.set_tooltip_text (_("Import names from CSV"));
+        import_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>I"}, _("Import names from CSV"));
         import_button.clicked.connect (import_names);
     }
 
