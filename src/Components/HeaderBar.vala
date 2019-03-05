@@ -10,7 +10,6 @@ public class HeaderBar : Gtk.HeaderBar {
     EntryManager entry_manager = EntryManager.get_instance ();
 
     public Gtk.SearchEntry search_entry = new Gtk.SearchEntry ();
-    Gtk.Button cheatsheet_button = new Gtk.Button.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
     Gtk.Button create_button = new Gtk.Button.from_icon_name ("contact-new", Gtk.IconSize.LARGE_TOOLBAR);
     Gtk.Button import_button = new Gtk.Button.from_icon_name ("document-import", Gtk.IconSize.LARGE_TOOLBAR);
     Gtk.Button return_button = new Gtk.Button ();
@@ -24,7 +23,6 @@ public class HeaderBar : Gtk.HeaderBar {
         generate_import_button ();
         generate_return_button ();
         generate_choose_winner_button ();
-        generate_cheatsheet_button ();
 
         this.show_close_button = true;
 
@@ -33,7 +31,6 @@ public class HeaderBar : Gtk.HeaderBar {
         this.pack_start (import_button);
         this.pack_start (search_entry);
 
-        this.pack_end (cheatsheet_button);
         this.pack_end (lottery_button);
     }
 
@@ -42,14 +39,6 @@ public class HeaderBar : Gtk.HeaderBar {
             instance = new HeaderBar ();
         }
         return instance;
-    }
-
-    private void generate_cheatsheet_button () {
-        cheatsheet_button.no_show_all = true;
-        cheatsheet.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>H"}, _("A list of available shortcuts"));
-        cheatsheet_button.clicked.connect (() => {
-            new Cheatsheet ();
-        });
     }
 
     private void generate_search_entry () {
@@ -71,7 +60,7 @@ public class HeaderBar : Gtk.HeaderBar {
     }
 
     private void generate_create_button () {
-        create_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>W"}, _("Add a new name"));
+        create_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>A"}, _("Add a new name"));
         create_button.clicked.connect (() => {
             new AddEntry ();
         });
@@ -134,7 +123,6 @@ public class HeaderBar : Gtk.HeaderBar {
         create_button.visible = answer;
         import_button.visible = answer;
         lottery_button.visible = answer;
-        cheatsheet_button.visible = answer;
     }
 
     public void show_return_button (bool answer) {

@@ -24,7 +24,6 @@ executable(
     'src/Dialogs/Alert.vala',
     'src/Dialogs/AddEntry.vala',
     'src/Dialogs/DeleteConfirm.vala',
-    'src/Dialogs/Cheatsheet.vala',
     'src/Views/ListView.vala',
     'src/Views/NotFoundView.vala',
     'src/Views/WelcomeView.vala',

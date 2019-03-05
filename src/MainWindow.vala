@@ -42,11 +42,6 @@ public class MainWindow : Gtk.Window {
                         stack_manager.show_winner_view ();
                     }
                     break;
-                case Gdk.Key.h:
-                    if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                        new Cheatsheet ();
-                    }
-                    break;
                 case Gdk.Key.f:
                   if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
                     header_bar.search_entry.grab_focus ();
