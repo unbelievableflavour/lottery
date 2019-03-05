@@ -9,7 +9,7 @@ msgstr ""
 #: data/com.github.bartzaalberg.lottery.appdata.xml.in:6
 #: data/com.github.bartzaalberg.lottery.desktop.in:3
 msgid "Lottery"
-msgstr "Lotery"
+msgstr "Loterij"
 
 #: data/com.github.bartzaalberg.lottery.appdata.xml.in:7
 #: data/com.github.bartzaalberg.lottery.desktop.in:4
