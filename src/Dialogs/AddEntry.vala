@@ -8,7 +8,6 @@ public class AddEntry : Gtk.Dialog {
     public AddEntry () {
         title = _("Enter a name");
         var description = _("Please enter a unique name");
-        set_default_size (630, 430);
         resizable = false;
 
         var image = new Gtk.Image.from_icon_name ("contact-new", Gtk.IconSize.DIALOG);
