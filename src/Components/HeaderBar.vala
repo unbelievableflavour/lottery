@@ -14,9 +14,21 @@ public class HeaderBar : Gtk.HeaderBar {
     Gtk.Button import_button = new Gtk.Button.from_icon_name ("document-import", Gtk.IconSize.LARGE_TOOLBAR);
     Gtk.Button return_button = new Gtk.Button ();
     Gtk.Button lottery_button = new Gtk.Button ();
+    public static GLib.Settings settings;
 
     HeaderBar () {
+        settings = new GLib.Settings (Constants.APPLICATION_NAME);
         Granite.Widgets.Utils.set_color_primary (this, Constants.BRAND_COLOR);
+
+        var gtk_settings = Gtk.Settings.get_default ();
+        var dark_mode_switch = new Granite.ModeSwitch.from_icon_name (
+            "display-brightness-symbolic", "weather-clear-night-symbolic"
+        );
+        dark_mode_switch.primary_icon_tooltip_text = _("Light mode");
+        dark_mode_switch.secondary_icon_tooltip_text = _("Dark mode");
+        dark_mode_switch.valign = Gtk.Align.CENTER;
+        dark_mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
+        settings.bind ("use-dark-theme", dark_mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         generate_search_entry ();
         generate_create_button ();
@@ -29,6 +41,7 @@ public class HeaderBar : Gtk.HeaderBar {
         this.pack_start (return_button);
         this.pack_start (create_button);
         this.pack_start (import_button);
+        this.pack_start (dark_mode_switch);
         this.pack_start (search_entry);
 
         this.pack_end (lottery_button);
