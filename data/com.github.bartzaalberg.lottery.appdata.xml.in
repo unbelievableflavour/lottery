@@ -49,6 +49,15 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
  <releases>
+  <release version="1.6.0" date="2019-03-19">
+    <description>
+      <p>Added dark mode</p>
+      <ul>
+        <li>Added dark mode</li>
+        <li>Fixed dialog size</li>
+      </ul>
+     </description>
+  </release>
   <release version="1.5.0" date="2019-03-07">
     <description>
       <p>Removed the cheatsheet</p>
