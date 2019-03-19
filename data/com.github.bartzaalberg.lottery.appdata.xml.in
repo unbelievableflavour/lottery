@@ -13,6 +13,7 @@
        <li>Randomly generate a winner!</li>
        <li>Use cool shortcuts to make it easier!</li>
        <li>Import CSV files</li>
+       <li>Choose between light and dark with dark mode</li>
     </ul>
   </description>
   <provides>

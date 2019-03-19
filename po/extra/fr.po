@@ -51,6 +51,10 @@ msgstr "Utilisez des raccourcis cools pour plus de facilité !"
 msgid "Import CSV files"
 msgstr "Importez des fichiers CSV"
 
+#: data/com.github.bartzaalberg.lottery.appdata.xml.in:16
+msgid "Choose between light and dark with dark mode"
+msgstr ""
+
 #: data/com.github.bartzaalberg.lottery.appdata.xml.in:30
 msgid "Bart Zaalberg"
 msgstr "Bart Zaalberg"
