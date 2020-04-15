@@ -1,3 +1,5 @@
+<a href="https://gitlocalize.com/repo/4334"> <img src="https://gitlocalize.com/repo/4334/whole_project/badge.svg" /> </a>
+
 # Lottery
 Determine who will be the winner
 
