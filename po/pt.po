@@ -1,0 +1,175 @@
+# Portuguese (Portugal) translations for https://github.com/bartzaalberg/lottery package.
+# Copyright (C) 2017 THE https://github.com/bartzaalberg/lottery COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.bartzaalberg.lottery package.
+# André Barata <andretiagob@protonmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.bartzaalberg.lottery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-27 10:59+0100\n"
+"PO-Revision-Date: 2020-08-29 11:57+0100\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: André Barata <andretiagob@protonmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt\n"
+
+#: src/ListBoxRow.vala:27
+msgid "Remove this name"
+msgstr "Remover este nome"
+
+#: src/StackManager.vala:70
+msgid "Cannot choose a winner yet"
+msgstr "Ainda não é possível escolher um vencedor"
+
+#: src/StackManager.vala:70
+msgid "No names have been added yet"
+msgstr "Ainda não foram adicionados nomes"
+
+#: src/Dialogs/AddEntry.vala:9
+msgid "Enter a name"
+msgstr "Inserir um nome"
+
+#: src/Dialogs/AddEntry.vala:10
+msgid "Please enter a unique name"
+msgstr "Por favor insira um nome único"
+
+#: src/Dialogs/AddEntry.vala:18
+msgid "Sam Johnson"
+msgstr "Sam Johnson"
+
+#: src/Dialogs/AddEntry.vala:19
+msgid "Please enter the name here."
+msgstr "Por favor insira o nome aqui."
+
+#: src/Dialogs/AddEntry.vala:52 src/Dialogs/Cheatsheet.vala:29
+msgid "Close"
+msgstr "Fechar"
+
+#: src/Dialogs/AddEntry.vala:58
+msgid "Create"
+msgstr "Criar"
+
+#: src/Dialogs/AddEntry.vala:90
+msgid "Please enter a name"
+msgstr "Por favor insira um nome"
+
+#: src/Dialogs/AddEntry.vala:90
+msgid "You didn't enter a name. Please do so to continue!"
+msgstr "Não adicionou um nome. Por favor faça-o para continuar!"
+
+#: src/Dialogs/AddEntry.vala:95
+msgid "This person is already in the list"
+msgstr "Esta pessoa já está na lista"
+
+#: src/Dialogs/AddEntry.vala:95
+msgid "Please choose a different name"
+msgstr "Por favor escolha um nome diferente"
+
+#: src/Dialogs/DeleteConfirm.vala:8
+msgid "No person was selected"
+msgstr "Nenhuma pessoa foi selecionada"
+
+#: src/Dialogs/DeleteConfirm.vala:8
+msgid "Please select a person and try again."
+msgstr "Por favor selecione uma pessoa e tente novamente."
+
+#: src/Dialogs/DeleteConfirm.vala:15
+msgid "Are you sure?"
+msgstr "Tem a certeza?"
+
+#: src/Dialogs/DeleteConfirm.vala:21
+msgid "You are about to remove this person from the list. Are you sure?"
+msgstr "Está prestes a remover esta pessoa da lista. Tem a certeza?"
+
+#: src/Dialogs/DeleteConfirm.vala:44
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Dialogs/DeleteConfirm.vala:50
+msgid "Delete"
+msgstr "Apagar"
+
+#: src/Dialogs/Cheatsheet.vala:7
+msgid "Cheatsheet"
+msgstr "Cábula"
+
+#: src/Dialogs/Cheatsheet.vala:14 src/Components/HeaderBar.vala:74
+msgid "Add a new name"
+msgstr "Adicionar um novo nome"
+
+#: src/Dialogs/Cheatsheet.vala:17
+msgid "Randomly choose a winner"
+msgstr "Escolher aleatoriamente um vencedor"
+
+#: src/Dialogs/Cheatsheet.vala:20
+msgid "Search"
+msgstr "Procurar"
+
+#: src/Dialogs/Cheatsheet.vala:23
+msgid "Open the cheatsheet"
+msgstr "Abrir a cábula"
+
+#: src/Dialogs/Cheatsheet.vala:26 src/Components/HeaderBar.vala:81
+msgid "Import names from CSV"
+msgstr "Importar nomes de um CSV"
+
+#: src/Views/NotFoundView.vala:7
+msgid "Nothing was found"
+msgstr "Nada foi encontrado"
+
+#: src/Views/NotFoundView.vala:7
+msgid "Try searching for something else"
+msgstr "Tente pesquisar por outra coisa"
+
+#: src/Views/WelcomeView.vala:7
+msgid "Add some names!"
+msgstr "Adicione alguns nomes!"
+
+#: src/Views/WelcomeView.vala:7
+msgid "Click the upper left button"
+msgstr "Clicar no botão na parte superior esquerda"
+
+#: src/Views/WinnerView.vala:6
+msgid "The winner is"
+msgstr "E o vencedor é"
+
+#: src/Views/WinnerView.vala:6
+msgid "him"
+msgstr "ele"
+
+#: src/Components/HeaderBar.vala:49
+msgid "A list of available shortcuts"
+msgstr "Uma lista com os atalhos disponíveis"
+
+#: src/Components/HeaderBar.vala:56
+msgid "Search names"
+msgstr "Procurar nomes"
+
+#: src/Components/HeaderBar.vala:57
+msgid "Search for names"
+msgstr "Procurar por nomes"
+
+#: src/Components/HeaderBar.vala:66
+msgid "Randomly generate a winner"
+msgstr "Gerar aleatoriamente um vencedor"
+
+#: src/Components/HeaderBar.vala:94
+msgid "File doesnt exist"
+msgstr "Ficheiro não existe"
+
+#: src/Components/HeaderBar.vala:94
+msgid "File "
+msgstr "Ficheiro "
+
+#: src/Components/HeaderBar.vala:94
+msgid " doesn't exist"
+msgstr " não existe"
+
+#: src/Components/HeaderBar.vala:123
+msgid "Back"
+msgstr "Voltar"
